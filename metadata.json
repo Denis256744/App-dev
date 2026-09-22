@@ -1,0 +1,6 @@
+{
+  "name": "My Notes",
+  "description": "A clean, modern digital notes application for creating, organizing, pinning, and managing coursework and personal notes with dark mode and trash recovery.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

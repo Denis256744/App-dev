@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Notes - Modern Digital Notes Application</title>
+    <meta name="description" content="A clean, modern digital notes application for creating, organizing, pinning, and managing coursework and personal notes with dark mode and trash recovery." />
+    <meta property="og:title" content="My Notes - Modern Digital Notes Application" />
+    <meta property="og:description" content="A clean, modern digital notes application for creating, organizing, pinning, and managing coursework and personal notes with dark mode and trash recovery." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('mynotes_theme_preference_v1');
+          if (saved === 'dark' || (!saved && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body class="bg-zinc-50 dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100 min-h-screen">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
+
